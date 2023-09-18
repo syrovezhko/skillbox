@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "json-server": "^0.17.3",
+    "mobx": "^6.10.2",
+    "mobx-react-lite": "^4.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.67.0"
