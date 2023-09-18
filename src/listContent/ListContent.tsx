@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './ListContent.module.scss'
+import styles from './ListContent.module.scss';
 import ListText from '../listText/ListText';
+import content from '../store/content';
 
-const ListContent = () => {
+const ListContent = ({ i }: { i: number }) => {
   return (
     <div className={styles.content}>
-      <ListText/>
-      <ListText/>
-      <ListText/>
-      <ListText/>
+      {content.data[i].text.map((text: string, index: number) => (
+        <ListText text={text} key={index} />
+      ))}
     </div>
   );
 };
